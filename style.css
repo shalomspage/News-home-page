@@ -1,0 +1,202 @@
+@font-face{
+    font-family: Inter-font;
+    src:url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf)
+}
+body{
+    margin: 0;
+    font-family: Inter-font;
+}
+main{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.close-menu{
+    display: none;
+}
+.menu-bar{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    margin: 10px;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.hero-section img{
+    max-width: 100%;
+}
+.side-nav{
+    margin-left: 20px;
+    background-color: hsl(240, 100%, 5%);
+    color: #fff;
+    padding: 15px;
+    line-height: 24px;
+}
+.side-nav p{
+    color: gray;
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 10px;
+}
+.text-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-content{
+    width: 50%;
+}
+.heading h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    width: 190px;
+    color: #fff;
+    background-color: hsl(5, 85%, 63%);
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.side-nav h3{
+    color:hsl(35, 77%, 62%);
+    font-size: 30px;
+}
+section{
+    display: flex;
+    margin: 20px;
+}
+section .card{
+    display: flex;
+    align-items: center;
+   
+}
+section img{
+    width: 100px;
+    height: 20vh;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.number{
+    color: lightgray;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+.back-drop{
+    display: flex;
+}
+.text-section h4{
+    font-size: 14px;
+}
+@media (min-width: 961px){
+    .back-drop{
+        display: flex !important;
+    }
+}
+
+@media (max-width: 960px){
+    .close-menu{
+        display: block;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .back-drop{
+       display: none; 
+    }
+    nav{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .hero-section{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.card-section{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+  
+    .hero-content{
+        display: block;
+    }
+    .side-nav{
+        margin: 0;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section .card{
+        width: 300px;
+    }
+    .heading h2{
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .text-area{
+        display: block;
+    }
+    .break{
+        display: none;
+    }
+    button{
+        margin-bottom: 40px;
+        width: 40%;
+    }
+    .text-section{
+        margin-left: 20px;
+    }
+    .nav-links{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        position: absolute;
+        top: -15px;
+        right: 0;
+        opacity: 1;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .menu-bar{
+        display: block;
+        object-fit: contain;
+        margin-right: 40px;
+    }
+  
+    .nav-link{
+        margin: 20px;
+    }
+    .close-menu{
+        width: 30px;
+    }
+    .back-drop{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .p-content{
+        width: 100%;
+    }
+
+}
